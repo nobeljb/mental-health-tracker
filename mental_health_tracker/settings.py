@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-s#+efp#)d@ba6x^lrgz9%m=o_73r4rn7glr$a_!7uc)=b&b&w&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "http://nobel-julian-mentalhealthtracker.pbp.cs.ui.ac.id", "https://nobel-julian-mentalhealthtracker.pbp.cs.ui.ac.id"]
+
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "nobel-julian-mentalhealthtracker.pbp.cs.ui.ac.id"]
 
 
 # Application definition
@@ -122,3 +123,5 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ["http://localhost","http://127.0.0.1","http://nobel-julian-mentalhealthtracker.pbp.cs.ui.ac.id", "https://nobel-julian-mentalhealthtracker.pbp.cs.ui.ac.id"]
